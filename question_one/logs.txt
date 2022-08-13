@@ -1,0 +1,990 @@
+2022-08-13 09:46:19.863520: Unknown string format: 123fd35
+2022-08-13 09:46:19.864522: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:19.865521: could not convert string to float: '123fd35'
+2022-08-13 09:46:19.866519: Unknown string format: dfgc
+2022-08-13 09:46:19.866519: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:19.867552: could not convert string to float: 'dfgc'
+2022-08-13 09:46:19.868556: Unknown string format: 12olki
+2022-08-13 09:46:19.869520: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:19.869520: could not convert string to float: '12olki'
+2022-08-13 09:46:19.870556: Given date string not likely a datetime.
+2022-08-13 09:46:19.870556: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:19.871520: could not convert string to float: 'a'
+2022-08-13 09:46:20.002719: Unknown string format: 123fd35
+2022-08-13 09:46:20.003693: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:20.003693: could not convert string to float: '123fd35'
+2022-08-13 09:46:20.004692: Unknown string format: 32u09wekjbfje
+2022-08-13 09:46:20.005694: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:46:20.005694: could not convert string to float: '32u09wekjbfje'
+2022-08-13 09:46:20.007657: day is out of range for month
+2022-08-13 09:46:20.007657: with_traceback() takes exactly one argument (0 given)
+2022-08-13 09:46:20.008667: could not convert string to float: '01/31/2022'
+2022-08-13 09:47:27.990180: Unknown string format: 123fd35
+2022-08-13 09:47:27.991153: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:27.991153: could not convert string to float: '123fd35'
+2022-08-13 09:47:27.992151: Unknown string format: dfgc
+2022-08-13 09:47:27.993148: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:27.994148: could not convert string to float: 'dfgc'
+2022-08-13 09:47:27.995148: Unknown string format: 12olki
+2022-08-13 09:47:27.996147: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:27.997147: could not convert string to float: '12olki'
+2022-08-13 09:47:27.998181: Given date string not likely a datetime.
+2022-08-13 09:47:27.998181: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:27.999149: could not convert string to float: 'a'
+2022-08-13 09:47:28.020188: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 09:47:28.065151: Unknown string format: 123fd35
+2022-08-13 09:47:28.066145: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.066145: could not convert string to float: '123fd35'
+2022-08-13 09:47:28.067151: Unknown string format: 32u09wekjbfje
+2022-08-13 09:47:28.068147: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.069148: could not convert string to float: '32u09wekjbfje'
+2022-08-13 09:47:28.071146: day is out of range for month
+2022-08-13 09:47:28.073180: with_traceback() takes exactly one argument (0 given)
+2022-08-13 09:47:28.073180: could not convert string to float: '01/31/2022'
+2022-08-13 09:47:28.093146: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 09:47:28.139183: Unknown string format: 32u09wekjbfje
+2022-08-13 09:47:28.139183: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.140199: could not convert string to float: '32u09wekjbfje'
+2022-08-13 09:47:28.141180: Unknown string format: 3434r409km123456
+2022-08-13 09:47:28.141180: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.142181: could not convert string to float: '3434r409km123456'
+2022-08-13 09:47:28.264180: Unknown string format: 32u09wekjbfje
+2022-08-13 09:47:28.264180: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.265202: could not convert string to float: '32u09wekjbfje'
+2022-08-13 09:47:28.266181: Unknown string format: 3434r409kmPAID123456
+2022-08-13 09:47:28.267145: not enough values to unpack (expected 3, got 1)
+2022-08-13 09:47:28.267145: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 10:33:35.313845: Unknown string format: 123fd35
+2022-08-13 10:33:35.314847: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.315846: could not convert string to float: '123fd35'
+2022-08-13 10:33:35.316847: Unknown string format: dfgc
+2022-08-13 10:33:35.317847: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.318848: could not convert string to float: 'dfgc'
+2022-08-13 10:33:35.319846: Unknown string format: 12olki
+2022-08-13 10:33:35.320847: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.321848: could not convert string to float: '12olki'
+2022-08-13 10:33:35.322849: Given date string not likely a datetime.
+2022-08-13 10:33:35.323845: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.324849: could not convert string to float: 'a'
+2022-08-13 10:33:35.430654: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 10:33:35.465680: Unknown string format: 123fd35
+2022-08-13 10:33:35.466670: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.468344: could not convert string to float: '123fd35'
+2022-08-13 10:33:35.469305: Unknown string format: 32u09wekjbfje
+2022-08-13 10:33:35.470312: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.471312: could not convert string to float: '32u09wekjbfje'
+2022-08-13 10:33:35.473312: day is out of range for month
+2022-08-13 10:33:35.475313: with_traceback() takes exactly one argument (0 given)
+2022-08-13 10:33:35.476313: could not convert string to float: '01/31/2022'
+2022-08-13 10:33:35.504924: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 10:33:35.542204: Unknown string format: 32u09wekjbfje
+2022-08-13 10:33:35.544066: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.544574: could not convert string to float: '32u09wekjbfje'
+2022-08-13 10:33:35.545617: Unknown string format: 3434r409km123456
+2022-08-13 10:33:35.546584: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.547583: could not convert string to float: '3434r409km123456'
+2022-08-13 10:33:35.579574: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 10:33:35.605575: Unknown string format: 32u09wekjbfje
+2022-08-13 10:33:35.606573: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.607575: could not convert string to float: '32u09wekjbfje'
+2022-08-13 10:33:35.608606: Unknown string format: 3434r409kmPAID123456
+2022-08-13 10:33:35.609572: not enough values to unpack (expected 3, got 1)
+2022-08-13 10:33:35.610573: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 10:33:35.643570: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:11:22.540249: Unknown string format: 123fd35
+2022-08-13 11:11:22.541275: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.542274: could not convert string to float: '123fd35'
+2022-08-13 11:11:22.543250: Unknown string format: dfgc
+2022-08-13 11:11:22.544250: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.545251: could not convert string to float: 'dfgc'
+2022-08-13 11:11:22.546251: Unknown string format: 12olki
+2022-08-13 11:11:22.547249: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.548252: could not convert string to float: '12olki'
+2022-08-13 11:11:22.549251: Given date string not likely a datetime.
+2022-08-13 11:11:22.550250: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.551276: could not convert string to float: 'a'
+2022-08-13 11:11:22.660773: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:11:22.694770: Unknown string format: 123fd35
+2022-08-13 11:11:22.695767: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.696736: could not convert string to float: '123fd35'
+2022-08-13 11:11:22.697772: Unknown string format: 32u09wekjbfje
+2022-08-13 11:11:22.698737: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.699735: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:11:22.701734: day is out of range for month
+2022-08-13 11:11:22.702735: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:11:22.703734: could not convert string to float: '01/31/2022'
+2022-08-13 11:11:22.725099: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:11:22.748785: Unknown string format: 32u09wekjbfje
+2022-08-13 11:11:22.749847: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.750856: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:11:22.751855: Unknown string format: 3434r409km123456
+2022-08-13 11:11:22.752856: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.753687: could not convert string to float: '3434r409km123456'
+2022-08-13 11:11:22.784969: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:11:22.818218: Unknown string format: 32u09wekjbfje
+2022-08-13 11:11:22.819218: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.820218: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:11:22.821218: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:11:22.822220: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:11:22.823218: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:11:22.852945: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:01.958476: Unknown string format: 123fd35
+2022-08-13 11:13:01.959478: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:01.960477: could not convert string to float: '123fd35'
+2022-08-13 11:13:01.962478: Unknown string format: dfgc
+2022-08-13 11:13:01.963476: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:01.964480: could not convert string to float: 'dfgc'
+2022-08-13 11:13:01.965478: Unknown string format: 12olki
+2022-08-13 11:13:01.966478: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:01.967477: could not convert string to float: '12olki'
+2022-08-13 11:13:01.969476: Given date string not likely a datetime.
+2022-08-13 11:13:01.970478: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:01.970478: could not convert string to float: 'a'
+2022-08-13 11:13:02.086477: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:02.111476: Unknown string format: 123fd35
+2022-08-13 11:13:02.112475: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.113475: could not convert string to float: '123fd35'
+2022-08-13 11:13:02.114478: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:02.115477: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.116475: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:02.118475: day is out of range for month
+2022-08-13 11:13:02.119476: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:13:02.120476: could not convert string to float: '01/31/2022'
+2022-08-13 11:13:02.158477: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:02.193195: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:02.194203: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.195204: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:02.196672: Unknown string format: 3434r409km123456
+2022-08-13 11:13:02.196672: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.197683: could not convert string to float: '3434r409km123456'
+2022-08-13 11:13:02.232683: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:02.260707: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:02.261685: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.262682: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:02.264682: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:13:02.266682: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:02.267684: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:13:02.289684: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:26.533958: Unknown string format: 123fd35
+2022-08-13 11:13:26.534966: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.534966: could not convert string to float: '123fd35'
+2022-08-13 11:13:26.536967: Unknown string format: dfgc
+2022-08-13 11:13:26.537966: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.538967: could not convert string to float: 'dfgc'
+2022-08-13 11:13:26.539966: Unknown string format: 12olki
+2022-08-13 11:13:26.540966: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.542004: could not convert string to float: '12olki'
+2022-08-13 11:13:26.542991: Given date string not likely a datetime.
+2022-08-13 11:13:26.543967: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.544966: could not convert string to float: 'a'
+2022-08-13 11:13:26.649490: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:26.686781: Unknown string format: 123fd35
+2022-08-13 11:13:26.687791: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.688790: could not convert string to float: '123fd35'
+2022-08-13 11:13:26.689790: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:26.690790: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.691792: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:26.693828: day is out of range for month
+2022-08-13 11:13:26.694792: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:13:26.695790: could not convert string to float: '01/31/2022'
+2022-08-13 11:13:26.724053: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:26.759233: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:26.760189: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.760980: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:26.761988: Unknown string format: 3434r409km123456
+2022-08-13 11:13:26.763017: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.764012: could not convert string to float: '3434r409km123456'
+2022-08-13 11:13:26.795425: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:13:26.829867: Unknown string format: 32u09wekjbfje
+2022-08-13 11:13:26.830868: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.831867: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:13:26.832894: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:13:26.833868: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:13:26.835275: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:13:26.871343: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:20:00.971146: Unknown string format: 123fd35
+2022-08-13 11:20:00.975934: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:00.979874: could not convert string to float: '123fd35'
+2022-08-13 11:20:00.985877: Unknown string format: dfgc
+2022-08-13 11:20:00.989892: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:00.993872: could not convert string to float: 'dfgc'
+2022-08-13 11:20:01.000873: Unknown string format: 12olki
+2022-08-13 11:20:01.004883: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.007874: could not convert string to float: '12olki'
+2022-08-13 11:20:01.012879: Given date string not likely a datetime.
+2022-08-13 11:20:01.017882: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.020876: could not convert string to float: 'a'
+2022-08-13 11:20:01.258076: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:20:01.343120: Unknown string format: 123fd35
+2022-08-13 11:20:01.348075: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.350119: could not convert string to float: '123fd35'
+2022-08-13 11:20:01.353075: Unknown string format: 32u09wekjbfje
+2022-08-13 11:20:01.356072: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.358202: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:20:01.363078: day is out of range for month
+2022-08-13 11:20:01.370117: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:20:01.373227: could not convert string to float: '01/31/2022'
+2022-08-13 11:20:01.447190: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:20:01.548232: Unknown string format: 32u09wekjbfje
+2022-08-13 11:20:01.551361: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.555238: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:20:01.560231: Unknown string format: 3434r409km123456
+2022-08-13 11:20:01.564242: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.568374: could not convert string to float: '3434r409km123456'
+2022-08-13 11:20:01.651228: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:20:01.765238: Unknown string format: 32u09wekjbfje
+2022-08-13 11:20:01.769786: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.772936: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:20:01.779231: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:20:01.783237: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:20:01.787362: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:20:01.855227: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:21:19.902325: Unknown string format: 123fd35
+2022-08-13 11:21:19.906282: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:19.910278: could not convert string to float: '123fd35'
+2022-08-13 11:21:19.915269: Unknown string format: dfgc
+2022-08-13 11:21:19.919290: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:19.922662: could not convert string to float: 'dfgc'
+2022-08-13 11:21:19.927488: Unknown string format: 12olki
+2022-08-13 11:21:19.931292: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:19.935287: could not convert string to float: '12olki'
+2022-08-13 11:21:19.939579: Given date string not likely a datetime.
+2022-08-13 11:21:19.943527: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:19.947666: could not convert string to float: 'a'
+2022-08-13 11:21:20.276553: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:21:20.357102: Unknown string format: 123fd35
+2022-08-13 11:21:20.360102: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.362103: could not convert string to float: '123fd35'
+2022-08-13 11:21:20.366119: Unknown string format: 32u09wekjbfje
+2022-08-13 11:21:20.369215: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.371101: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:21:20.376384: day is out of range for month
+2022-08-13 11:21:20.380104: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:21:20.382103: could not convert string to float: '01/31/2022'
+2022-08-13 11:21:20.451101: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:21:20.533111: Unknown string format: 32u09wekjbfje
+2022-08-13 11:21:20.535113: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.537111: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:21:20.540564: Unknown string format: 3434r409km123456
+2022-08-13 11:21:20.543107: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.545102: could not convert string to float: '3434r409km123456'
+2022-08-13 11:21:20.603112: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:21:20.678112: Unknown string format: 32u09wekjbfje
+2022-08-13 11:21:20.681106: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.684108: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:21:20.688112: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:21:20.690107: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:21:20.693105: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:21:20.761103: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:32:54.337810: <urlopen error [Errno 11001] getaddrinfo failed>
+2022-08-13 11:33:37.255004: <urlopen error [Errno 11001] getaddrinfo failed>
+2022-08-13 11:37:41.432759: Unknown string format: 123fd35
+2022-08-13 11:37:41.438774: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:41.443568: could not convert string to float: '123fd35'
+2022-08-13 11:37:41.454276: Unknown string format: dfgc
+2022-08-13 11:37:41.458274: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:41.461281: could not convert string to float: 'dfgc'
+2022-08-13 11:37:41.471287: Unknown string format: 12olki
+2022-08-13 11:37:41.475277: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:41.480275: could not convert string to float: '12olki'
+2022-08-13 11:37:41.487265: Given date string not likely a datetime.
+2022-08-13 11:37:41.491864: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:41.495762: could not convert string to float: 'a'
+2022-08-13 11:37:41.804262: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:37:41.999489: Unknown string format: 123fd35
+2022-08-13 11:37:42.004494: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.007494: could not convert string to float: '123fd35'
+2022-08-13 11:37:42.017494: Unknown string format: 32u09wekjbfje
+2022-08-13 11:37:42.021498: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.025585: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:37:42.045969: day is out of range for month
+2022-08-13 11:37:42.055912: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:37:42.060199: could not convert string to float: '01/31/2022'
+2022-08-13 11:37:42.201452: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:37:42.335540: Unknown string format: 32u09wekjbfje
+2022-08-13 11:37:42.338338: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.343339: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:37:42.351822: Unknown string format: 3434r409km123456
+2022-08-13 11:37:42.355597: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.359330: could not convert string to float: '3434r409km123456'
+2022-08-13 11:37:42.477714: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:37:42.611675: Unknown string format: 32u09wekjbfje
+2022-08-13 11:37:42.616040: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.619399: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:37:42.627676: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:37:42.631630: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:37:42.634686: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 11:37:42.756969: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 11:49:22.691680: Unknown string format: 123fd35
+2022-08-13 11:49:22.696130: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:49:22.699138: could not convert string to float: '123fd35'
+2022-08-13 11:49:22.703178: Unknown string format: dfgc
+2022-08-13 11:49:22.706143: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:49:22.710133: could not convert string to float: 'dfgc'
+2022-08-13 11:49:22.714209: Unknown string format: 12olki
+2022-08-13 11:49:22.718238: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:49:22.721179: could not convert string to float: '12olki'
+2022-08-13 11:49:22.726369: Given date string not likely a datetime.
+2022-08-13 11:49:22.730143: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:49:22.733753: could not convert string to float: 'a'
+2022-08-13 11:53:44.083398: Unknown string format: 123fd35
+2022-08-13 11:53:44.085003: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:53:44.088005: could not convert string to float: '123fd35'
+2022-08-13 11:53:44.092009: Unknown string format: dfgc
+2022-08-13 11:53:44.094011: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:53:44.096005: could not convert string to float: 'dfgc'
+2022-08-13 11:53:44.099002: Unknown string format: 12olki
+2022-08-13 11:53:44.101083: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:53:44.104006: could not convert string to float: '12olki'
+2022-08-13 11:53:44.107006: Given date string not likely a datetime.
+2022-08-13 11:53:44.109005: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:53:44.111003: could not convert string to float: 'a'
+2022-08-13 11:54:05.493192: Unknown string format: 123fd35
+2022-08-13 11:54:05.498011: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.500012: could not convert string to float: '123fd35'
+2022-08-13 11:54:05.504011: Unknown string format: dfgc
+2022-08-13 11:54:05.507119: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.509010: could not convert string to float: 'dfgc'
+2022-08-13 11:54:05.513075: Unknown string format: 12olki
+2022-08-13 11:54:05.516009: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.518448: could not convert string to float: '12olki'
+2022-08-13 11:54:05.521583: Given date string not likely a datetime.
+2022-08-13 11:54:05.524082: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.526008: could not convert string to float: 'a'
+2022-08-13 11:54:05.535008: Unknown string format: 123fd35
+2022-08-13 11:54:05.537386: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.539009: could not convert string to float: '123fd35'
+2022-08-13 11:54:05.543190: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:05.546244: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:05.549011: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:05.555009: day is out of range for month
+2022-08-13 11:54:05.558108: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:54:05.561131: could not convert string to float: '01/31/2022'
+2022-08-13 11:54:27.583548: Unknown string format: 123fd35
+2022-08-13 11:54:27.588550: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.592459: could not convert string to float: '123fd35'
+2022-08-13 11:54:27.598350: Unknown string format: dfgc
+2022-08-13 11:54:27.602350: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.606342: could not convert string to float: 'dfgc'
+2022-08-13 11:54:27.613347: Unknown string format: 12olki
+2022-08-13 11:54:27.618628: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.622345: could not convert string to float: '12olki'
+2022-08-13 11:54:27.629480: Given date string not likely a datetime.
+2022-08-13 11:54:27.633568: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.637516: could not convert string to float: 'a'
+2022-08-13 11:54:27.645342: Unknown string format: 123fd35
+2022-08-13 11:54:27.647344: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.649339: could not convert string to float: '123fd35'
+2022-08-13 11:54:27.652389: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:27.655341: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.657341: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:27.660340: day is out of range for month
+2022-08-13 11:54:27.665806: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:54:27.667341: could not convert string to float: '01/31/2022'
+2022-08-13 11:54:27.673341: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:27.675341: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.681339: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:27.684340: Unknown string format: 3434r409km123456
+2022-08-13 11:54:27.686339: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:27.688845: could not convert string to float: '3434r409km123456'
+2022-08-13 11:54:45.660378: Unknown string format: 123fd35
+2022-08-13 11:54:45.666333: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.670324: could not convert string to float: '123fd35'
+2022-08-13 11:54:45.675351: Unknown string format: dfgc
+2022-08-13 11:54:45.678322: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.683325: could not convert string to float: 'dfgc'
+2022-08-13 11:54:45.689725: Unknown string format: 12olki
+2022-08-13 11:54:45.692323: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.696321: could not convert string to float: '12olki'
+2022-08-13 11:54:45.701335: Given date string not likely a datetime.
+2022-08-13 11:54:45.704326: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.708378: could not convert string to float: 'a'
+2022-08-13 11:54:45.719323: Unknown string format: 123fd35
+2022-08-13 11:54:45.723332: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.725629: could not convert string to float: '123fd35'
+2022-08-13 11:54:45.729367: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:45.733329: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.735327: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:45.741656: day is out of range for month
+2022-08-13 11:54:45.748326: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:54:45.751323: could not convert string to float: '01/31/2022'
+2022-08-13 11:54:45.759326: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:45.762322: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.765325: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:45.769321: Unknown string format: 3434r409km123456
+2022-08-13 11:54:45.772065: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:45.774326: could not convert string to float: '3434r409km123456'
+2022-08-13 11:54:53.891310: Unknown string format: 123fd35
+2022-08-13 11:54:53.894270: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.896962: could not convert string to float: '123fd35'
+2022-08-13 11:54:53.901918: Unknown string format: dfgc
+2022-08-13 11:54:53.905919: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.908915: could not convert string to float: 'dfgc'
+2022-08-13 11:54:53.912915: Unknown string format: 12olki
+2022-08-13 11:54:53.915479: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.917917: could not convert string to float: '12olki'
+2022-08-13 11:54:53.920915: Given date string not likely a datetime.
+2022-08-13 11:54:53.923925: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.926914: could not convert string to float: 'a'
+2022-08-13 11:54:53.932963: Unknown string format: 123fd35
+2022-08-13 11:54:53.936325: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.937964: could not convert string to float: '123fd35'
+2022-08-13 11:54:53.941925: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:53.944920: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.946946: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:53.949957: day is out of range for month
+2022-08-13 11:54:53.955919: with_traceback() takes exactly one argument (0 given)
+2022-08-13 11:54:53.957920: could not convert string to float: '01/31/2022'
+2022-08-13 11:54:53.965185: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:53.967921: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.969917: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:53.974926: Unknown string format: 3434r409km123456
+2022-08-13 11:54:53.976957: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.980089: could not convert string to float: '3434r409km123456'
+2022-08-13 11:54:53.986923: Unknown string format: 32u09wekjbfje
+2022-08-13 11:54:53.989920: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:53.991957: could not convert string to float: '32u09wekjbfje'
+2022-08-13 11:54:53.995915: Unknown string format: 3434r409kmPAID123456
+2022-08-13 11:54:53.997919: not enough values to unpack (expected 3, got 1)
+2022-08-13 11:54:54.000917: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 12:53:30.407222: Unknown string format: 123fd35
+2022-08-13 12:53:30.408224: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.410223: could not convert string to float: '123fd35'
+2022-08-13 12:53:30.411223: Unknown string format: dfgc
+2022-08-13 12:53:30.412227: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.413223: could not convert string to float: 'dfgc'
+2022-08-13 12:53:30.414226: Unknown string format: 12olki
+2022-08-13 12:53:30.415292: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.416909: could not convert string to float: '12olki'
+2022-08-13 12:53:30.417912: Given date string not likely a datetime.
+2022-08-13 12:53:30.418913: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.419909: could not convert string to float: 'a'
+2022-08-13 12:53:30.500667: Unknown string format: 123fd35
+2022-08-13 12:53:30.501702: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.502217: could not convert string to float: '123fd35'
+2022-08-13 12:53:30.503256: Unknown string format: 32u09wekjbfje
+2022-08-13 12:53:30.504224: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.505226: could not convert string to float: '32u09wekjbfje'
+2022-08-13 12:53:30.507224: day is out of range for month
+2022-08-13 12:53:30.508226: with_traceback() takes exactly one argument (0 given)
+2022-08-13 12:53:30.508226: could not convert string to float: '01/31/2022'
+2022-08-13 12:53:30.511225: Unknown string format: 32u09wekjbfje
+2022-08-13 12:53:30.511225: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.512226: could not convert string to float: '32u09wekjbfje'
+2022-08-13 12:53:30.513250: Unknown string format: 3434r409km123456
+2022-08-13 12:53:30.514226: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.515226: could not convert string to float: '3434r409km123456'
+2022-08-13 12:53:30.518359: Unknown string format: 32u09wekjbfje
+2022-08-13 12:53:30.518359: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.520092: could not convert string to float: '32u09wekjbfje'
+2022-08-13 12:53:30.521102: Unknown string format: 3434r409kmPAID123456
+2022-08-13 12:53:30.522099: not enough values to unpack (expected 3, got 1)
+2022-08-13 12:53:30.522099: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 13:09:02.624647: Unknown string format: 123fd35
+2022-08-13 13:09:02.626622: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.627623: could not convert string to float: '123fd35'
+2022-08-13 13:09:02.629336: Unknown string format: dfgc
+2022-08-13 13:09:02.631666: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.632661: could not convert string to float: 'dfgc'
+2022-08-13 13:09:02.634659: Unknown string format: 12olki
+2022-08-13 13:09:02.635658: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.636662: could not convert string to float: '12olki'
+2022-08-13 13:09:02.637662: Given date string not likely a datetime.
+2022-08-13 13:09:02.639678: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.640677: could not convert string to float: 'a'
+2022-08-13 13:09:02.642691: Unknown string format: 123fd35
+2022-08-13 13:09:02.643659: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.644658: could not convert string to float: '123fd35'
+2022-08-13 13:09:02.646694: Unknown string format: 32u09wekjbfje
+2022-08-13 13:09:02.647659: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.648659: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:09:02.650660: day is out of range for month
+2022-08-13 13:09:02.652700: with_traceback() takes exactly one argument (0 given)
+2022-08-13 13:09:02.653660: could not convert string to float: '01/31/2022'
+2022-08-13 13:09:02.655659: Unknown string format: 32u09wekjbfje
+2022-08-13 13:09:02.656659: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.657696: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:09:02.659660: Unknown string format: 3434r409km123456
+2022-08-13 13:09:02.660707: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.660707: could not convert string to float: '3434r409km123456'
+2022-08-13 13:09:02.664693: Unknown string format: 32u09wekjbfje
+2022-08-13 13:09:02.664693: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.665709: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:09:02.666659: Unknown string format: 3434r409kmPAID123456
+2022-08-13 13:09:02.667662: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:09:02.668692: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 13:58:20.459634: Unknown string format: 123fd35
+2022-08-13 13:58:20.494635: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.495637: could not convert string to float: '123fd35'
+2022-08-13 13:58:20.496712: Unknown string format: dfgc
+2022-08-13 13:58:20.497722: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.498746: could not convert string to float: 'dfgc'
+2022-08-13 13:58:20.499721: Unknown string format: 12olki
+2022-08-13 13:58:20.500844: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.500844: could not convert string to float: '12olki'
+2022-08-13 13:58:20.501854: Given date string not likely a datetime.
+2022-08-13 13:58:20.502852: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.503852: could not convert string to float: 'a'
+2022-08-13 13:58:20.506851: Unknown string format: 123fd35
+2022-08-13 13:58:20.506851: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.507852: could not convert string to float: '123fd35'
+2022-08-13 13:58:20.508852: Unknown string format: 32u09wekjbfje
+2022-08-13 13:58:20.509853: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.510852: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:58:20.511852: day is out of range for month
+2022-08-13 13:58:20.512855: with_traceback() takes exactly one argument (0 given)
+2022-08-13 13:58:20.513855: could not convert string to float: '01/31/2022'
+2022-08-13 13:58:20.515852: Unknown string format: 32u09wekjbfje
+2022-08-13 13:58:20.517407: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.517407: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:58:20.518416: Unknown string format: 3434r409km123456
+2022-08-13 13:58:20.519416: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.520451: could not convert string to float: '3434r409km123456'
+2022-08-13 13:58:20.522453: Unknown string format: 32u09wekjbfje
+2022-08-13 13:58:20.523742: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.524753: could not convert string to float: '32u09wekjbfje'
+2022-08-13 13:58:20.526753: Unknown string format: 3434r409kmPAID123456
+2022-08-13 13:58:20.526753: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.527761: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 13:58:20.528761: Unknown string format: 3434r409km123456
+2022-08-13 13:58:20.529760: not enough values to unpack (expected 3, got 1)
+2022-08-13 13:58:20.530763: could not convert string to float: '3434r409km123456'
+2022-08-13 14:09:46.850486: Unknown string format: 123fd35
+2022-08-13 14:09:46.851488: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.852486: could not convert string to float: '123fd35'
+2022-08-13 14:09:46.854485: Unknown string format: dfgc
+2022-08-13 14:09:46.855485: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.856498: could not convert string to float: 'dfgc'
+2022-08-13 14:09:46.857486: Unknown string format: 12olki
+2022-08-13 14:09:46.858522: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.858522: could not convert string to float: '12olki'
+2022-08-13 14:09:46.859484: Given date string not likely a datetime.
+2022-08-13 14:09:46.860485: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.861485: could not convert string to float: 'a'
+2022-08-13 14:09:46.863485: Unknown string format: 123fd35
+2022-08-13 14:09:46.864485: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.865518: could not convert string to float: '123fd35'
+2022-08-13 14:09:46.866486: Unknown string format: 32u09wekjbfje
+2022-08-13 14:09:46.867488: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.868486: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:09:46.870519: day is out of range for month
+2022-08-13 14:09:46.871486: with_traceback() takes exactly one argument (0 given)
+2022-08-13 14:09:46.872521: could not convert string to float: '01/31/2022'
+2022-08-13 14:09:46.874485: Unknown string format: 32u09wekjbfje
+2022-08-13 14:09:46.875485: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.877486: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:09:46.878523: Unknown string format: 3434r409km123456
+2022-08-13 14:09:46.879488: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.880491: could not convert string to float: '3434r409km123456'
+2022-08-13 14:09:46.886357: Unknown string format: 32u09wekjbfje
+2022-08-13 14:09:46.887353: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.888353: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:09:46.890354: Unknown string format: 3434r409kmPAID123456
+2022-08-13 14:09:46.891354: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:09:46.891354: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 14:52:06.130361: Unknown string format: 123fd35
+2022-08-13 14:52:06.130361: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.134237: could not convert string to float: '123fd35'
+2022-08-13 14:52:06.134237: Unknown string format: dfgc
+2022-08-13 14:52:06.134237: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.134237: could not convert string to float: 'dfgc'
+2022-08-13 14:52:06.138139: Unknown string format: 12olki
+2022-08-13 14:52:06.139996: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.139996: could not convert string to float: '12olki'
+2022-08-13 14:52:06.141006: Given date string not likely a datetime.
+2022-08-13 14:52:06.141006: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.141006: could not convert string to float: 'a'
+2022-08-13 14:52:06.291774: Unknown string format: 123fd35
+2022-08-13 14:52:06.291774: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.291774: could not convert string to float: '123fd35'
+2022-08-13 14:52:06.291774: Unknown string format: 32u09wekjbfje
+2022-08-13 14:52:06.295648: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.295648: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:52:06.295648: day is out of range for month
+2022-08-13 14:52:06.301108: with_traceback() takes exactly one argument (0 given)
+2022-08-13 14:52:06.301603: could not convert string to float: '01/31/2022'
+2022-08-13 14:52:06.431712: Unknown string format: 32u09wekjbfje
+2022-08-13 14:52:06.431712: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.431712: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:52:06.431712: Unknown string format: 3434r409km123456
+2022-08-13 14:52:06.435618: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.435618: could not convert string to float: '3434r409km123456'
+2022-08-13 14:52:06.586033: Unknown string format: 32u09wekjbfje
+2022-08-13 14:52:06.586033: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.586033: could not convert string to float: '32u09wekjbfje'
+2022-08-13 14:52:06.589936: Unknown string format: 3434r409kmPAID123456
+2022-08-13 14:52:06.589936: not enough values to unpack (expected 3, got 1)
+2022-08-13 14:52:06.589936: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 15:14:32.894243: Unknown string format: 123fd35
+2022-08-13 15:14:32.895246: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.897245: could not convert string to float: '123fd35'
+2022-08-13 15:14:32.899244: Unknown string format: dfgc
+2022-08-13 15:14:32.900244: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.901249: could not convert string to float: 'dfgc'
+2022-08-13 15:14:32.903247: Unknown string format: 12olki
+2022-08-13 15:14:32.904244: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.905244: could not convert string to float: '12olki'
+2022-08-13 15:14:32.907267: Given date string not likely a datetime.
+2022-08-13 15:14:32.909247: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.910246: could not convert string to float: 'a'
+2022-08-13 15:14:32.992143: Unknown string format: 123fd35
+2022-08-13 15:14:32.993143: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.994141: could not convert string to float: '123fd35'
+2022-08-13 15:14:32.995142: Unknown string format: 32u09wekjbfje
+2022-08-13 15:14:32.996141: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:32.997142: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:14:32.999143: day is out of range for month
+2022-08-13 15:14:33.000142: with_traceback() takes exactly one argument (0 given)
+2022-08-13 15:14:33.001143: could not convert string to float: '01/31/2022'
+2022-08-13 15:14:33.003141: Unknown string format: 32u09wekjbfje
+2022-08-13 15:14:33.004142: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:33.004142: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:14:33.006143: Unknown string format: 3434r409km123456
+2022-08-13 15:14:33.006143: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:33.007143: could not convert string to float: '3434r409km123456'
+2022-08-13 15:14:33.010079: Unknown string format: 32u09wekjbfje
+2022-08-13 15:14:33.010079: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:33.010079: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:14:33.013986: Unknown string format: 3434r409kmPAID123456
+2022-08-13 15:14:33.013986: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:14:33.013986: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 15:22:35.658165: Unknown string format: 123fd35
+2022-08-13 15:22:35.660163: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.661164: could not convert string to float: '123fd35'
+2022-08-13 15:22:35.661985: Unknown string format: dfgc
+2022-08-13 15:22:35.662945: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.663948: could not convert string to float: 'dfgc'
+2022-08-13 15:22:35.666050: Unknown string format: 12olki
+2022-08-13 15:22:35.666050: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.667836: could not convert string to float: '12olki'
+2022-08-13 15:22:35.669835: Given date string not likely a datetime.
+2022-08-13 15:22:35.670835: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.671837: could not convert string to float: 'a'
+2022-08-13 15:22:35.755662: Unknown string format: 123fd35
+2022-08-13 15:22:35.756661: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.757659: could not convert string to float: '123fd35'
+2022-08-13 15:22:35.758657: Unknown string format: 32u09wekjbfje
+2022-08-13 15:22:35.758657: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.759662: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:22:35.761659: day is out of range for month
+2022-08-13 15:22:35.762665: with_traceback() takes exactly one argument (0 given)
+2022-08-13 15:22:35.763625: could not convert string to float: '01/31/2022'
+2022-08-13 15:22:35.765708: Unknown string format: 32u09wekjbfje
+2022-08-13 15:22:35.765708: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.767865: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:22:35.768896: Unknown string format: 3434r409km123456
+2022-08-13 15:22:35.769895: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.770899: could not convert string to float: '3434r409km123456'
+2022-08-13 15:22:35.773899: Unknown string format: 32u09wekjbfje
+2022-08-13 15:22:35.773899: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.774864: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:22:35.775894: Unknown string format: 3434r409kmPAID123456
+2022-08-13 15:22:35.776864: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:22:35.777899: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 15:31:01.260264: Unknown string format: 123fd35
+2022-08-13 15:31:01.260264: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.260264: could not convert string to float: '123fd35'
+2022-08-13 15:31:01.264172: Unknown string format: dfgc
+2022-08-13 15:31:01.264172: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.268078: could not convert string to float: 'dfgc'
+2022-08-13 15:31:01.268078: Unknown string format: 12olki
+2022-08-13 15:31:01.271996: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.271996: could not convert string to float: '12olki'
+2022-08-13 15:31:01.353040: Given date string not likely a datetime.
+2022-08-13 15:31:01.356946: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.356946: could not convert string to float: 'a'
+2022-08-13 15:31:01.438979: Unknown string format: 123fd35
+2022-08-13 15:31:01.438979: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.438979: could not convert string to float: '123fd35'
+2022-08-13 15:31:01.442884: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:01.442884: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.442884: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:01.466342: day is out of range for month
+2022-08-13 15:31:01.470131: with_traceback() takes exactly one argument (0 given)
+2022-08-13 15:31:01.471131: could not convert string to float: '01/31/2022'
+2022-08-13 15:31:01.547045: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:01.547045: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.550952: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:01.550952: Unknown string format: 3434r409km123456
+2022-08-13 15:31:01.550952: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.554858: could not convert string to float: '3434r409km123456'
+2022-08-13 15:31:01.675836: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:01.675836: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.675836: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:01.679731: Unknown string format: 3434r409kmPAID123456
+2022-08-13 15:31:01.679731: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:01.679731: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 15:31:24.372722: Unknown string format: 123fd35
+2022-08-13 15:31:24.372722: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.372722: could not convert string to float: '123fd35'
+2022-08-13 15:31:24.376627: Unknown string format: dfgc
+2022-08-13 15:31:24.376627: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.376627: could not convert string to float: 'dfgc'
+2022-08-13 15:31:24.380534: Unknown string format: 12olki
+2022-08-13 15:31:24.380534: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.380534: could not convert string to float: '12olki'
+2022-08-13 15:31:24.380534: Given date string not likely a datetime.
+2022-08-13 15:31:24.384440: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.384440: could not convert string to float: 'a'
+2022-08-13 15:31:24.507838: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "borrower_id_pk"
+DETAIL:  Key ("Borrower_Id")=(123fd35) already exists.
+
+[SQL: INSERT INTO borrower ("Borrower_Id", "State", "City", "zip code", borrower_credit_score) VALUES (%(Borrower_Id)s, %(State)s, %(City)s, %(zip code)s, %(borrower_credit_score)s)]
+[parameters: ({'Borrower_Id': '123fd35', 'State': 'dfgc', 'City': '12olki', 'zip code': 19473, 'borrower_credit_score': '4'}, {'Borrower_Id': '123fd36', 'State': 'rtgio', 'City': '89hfg', 'zip code': 923475, 'borrower_credit_score': 'a'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 15:31:24.544638: Unknown string format: 123fd35
+2022-08-13 15:31:24.544638: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.544638: could not convert string to float: '123fd35'
+2022-08-13 15:31:24.548519: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:24.548519: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.548519: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:24.552426: day is out of range for month
+2022-08-13 15:31:24.555542: with_traceback() takes exactly one argument (0 given)
+2022-08-13 15:31:24.555858: could not convert string to float: '01/31/2022'
+2022-08-13 15:31:24.584352: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loan_id_pk"
+DETAIL:  Key (loan_id)=(32u09wekjbfje) already exists.
+
+[SQL: INSERT INTO loan_data ("Borrower_id", loan_id, "Date_of_release", "Term", "InterestRate", "LoanAmount", "Downpayment", "Payment_frequency", "Maturity_date") VALUES (%(Borrower_id)s, %(loan_id)s, %(Date_of_release)s, %(Term)s, %(InterestRate)s, %(LoanAmount)s, %(Downpayment)s, %(Payment_frequency)s, %(Maturity_date)s)]
+[parameters: ({'Borrower_id': '123fd35', 'loan_id': '32u09wekjbfje', 'Date_of_release': datetime.datetime(2021, 1, 27, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1209484, 'Downpayment': 124993, 'Payment_frequency': 100790.3333, 'Maturity_date': '01/31/2022'}, {'Borrower_id': '123fd36', 'loan_id': '9190i0-nbfb', 'Date_of_release': datetime.datetime(2021, 2, 1, 0, 0), 'Term': 24, 'InterestRate': 1.05, 'LoanAmount': 12394031, 'Downpayment': 1000000, 'Payment_frequency': 516417.9583, 'Maturity_date': '02/29/2023'}, {'Borrower_id': '123fd35', 'loan_id': '09u924rbwf', 'Date_of_release': datetime.datetime(2021, 4, 16, 0, 0), 'Term': 36, 'InterestRate': 1.05, 'LoanAmount': 45784937, 'Downpayment': 1200000, 'Payment_frequency': 1271803.8059999999, 'Maturity_date': '04/30/2024'}, {'Borrower_id': '123fd36', 'loan_id': '3240-9rfwb', 'Date_of_release': datetime.datetime(2021, 3, 26, 0, 0), 'Term': 12, 'InterestRate': 1.05, 'LoanAmount': 1234890, 'Downpayment': 132000, 'Payment_frequency': 102907.5, 'Maturity_date': '03/31/2022'})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 15:31:24.619508: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:24.619508: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.619508: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:24.623412: Unknown string format: 3434r409km123456
+2022-08-13 15:31:24.623412: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.623412: could not convert string to float: '3434r409km123456'
+2022-08-13 15:31:24.654663: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "schedule_id_pk"
+DETAIL:  Key (schedule_id)=(3434r409km123456) already exists.
+
+[SQL: INSERT INTO payment_schedule (loan_id, schedule_id, "Expected_payment_date", "Expected_payment_amount") VALUES (%(loan_id)s, %(schedule_id)s, %(Expected_payment_date)s, %(Expected_payment_amount)s)]
+[parameters: ({'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123456', 'Expected_payment_date': datetime.datetime(2021, 2, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123457', 'Expected_payment_date': datetime.datetime(2021, 3, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123458', 'Expected_payment_date': datetime.datetime(2021, 4, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123459', 'Expected_payment_date': datetime.datetime(2021, 5, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123460', 'Expected_payment_date': datetime.datetime(2021, 6, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123461', 'Expected_payment_date': datetime.datetime(2021, 7, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123462', 'Expected_payment_date': datetime.datetime(2021, 8, 27, 0, 0), 'Expected_payment_amount': 100790.3333}, {'loan_id': '32u09wekjbfje', 'schedule_id': '3434r409km123463', 'Expected_payment_date': datetime.datetime(2021, 9, 27, 0, 0), 'Expected_payment_amount': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33474', 'Expected_payment_date': datetime.datetime(2022, 2, 26, 0, 0), 'Expected_payment_amount': 102907.5}, {'loan_id': '3240-9rfwb', 'schedule_id': 'klnin09u4nj33475', 'Expected_payment_date': datetime.datetime(2022, 3, 26, 0, 0), 'Expected_payment_amount': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 15:31:24.689819: Unknown string format: 32u09wekjbfje
+2022-08-13 15:31:24.689819: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.689819: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:31:24.693725: Unknown string format: 3434r409kmPAID123456
+2022-08-13 15:31:24.693725: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:31:24.693725: could not convert string to float: '3434r409kmPAID123456'
+2022-08-13 15:31:24.724975: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "payment_id_pk"
+DETAIL:  Key (payment_id_pk)=(3434r409kmPAID123456) already exists.
+
+[SQL: INSERT INTO repayment_data (loan_id_fk, payment_id_pk, "Amount_paid", "Date_paid") VALUES (%(loan_id_fk)s, %(payment_id_pk)s, %(Amount_paid)s, %(Date_paid)s)]
+[parameters: ({'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123456', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123457', 'Amount_paid': datetime.datetime(2021, 3, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123458', 'Amount_paid': datetime.datetime(2021, 4, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123459', 'Amount_paid': datetime.datetime(2021, 5, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123460', 'Amount_paid': datetime.datetime(2021, 6, 27, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123461', 'Amount_paid': datetime.datetime(2021, 7, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123462', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}, {'loan_id_fk': '32u09wekjbfje', 'payment_id_pk': '3434r409kmPAID123463', 'Amount_paid': datetime.datetime(2021, 10, 31, 0, 0), 'Date_paid': 100790.3333}  ... displaying 10 of 84 total bound parameter sets ...  {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33474', 'Amount_paid': datetime.datetime(2022, 2, 26, 0, 0), 'Date_paid': 102907.5}, {'loan_id_fk': '3240-9rfwb', 'payment_id_pk': 'klnin09u4njPAID33475', 'Amount_paid': datetime.datetime(2022, 3, 26, 0, 0), 'Date_paid': 102907.5})]
+(Background on this error at: http://sqlalche.me/e/13/gkpj)
+2022-08-13 15:32:24.408915: Unknown string format: 123fd35
+2022-08-13 15:32:24.409914: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.411919: could not convert string to float: '123fd35'
+2022-08-13 15:32:24.412916: Unknown string format: dfgc
+2022-08-13 15:32:24.414139: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.415124: could not convert string to float: 'dfgc'
+2022-08-13 15:32:24.417206: Unknown string format: 12olki
+2022-08-13 15:32:24.418212: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.419172: could not convert string to float: '12olki'
+2022-08-13 15:32:24.420173: Given date string not likely a datetime.
+2022-08-13 15:32:24.421173: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.422173: could not convert string to float: 'a'
+2022-08-13 15:32:24.424168: Unknown string format: 123fd35
+2022-08-13 15:32:24.425170: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.426170: could not convert string to float: '123fd35'
+2022-08-13 15:32:24.428170: Unknown string format: 32u09wekjbfje
+2022-08-13 15:32:24.429171: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.429171: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:32:24.431171: day is out of range for month
+2022-08-13 15:32:24.432168: with_traceback() takes exactly one argument (0 given)
+2022-08-13 15:32:24.434170: could not convert string to float: '01/31/2022'
+2022-08-13 15:32:24.437169: Unknown string format: 32u09wekjbfje
+2022-08-13 15:32:24.438173: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.439171: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:32:24.441169: Unknown string format: 3434r409km123456
+2022-08-13 15:32:24.442170: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.442170: could not convert string to float: '3434r409km123456'
+2022-08-13 15:32:24.446205: Unknown string format: 32u09wekjbfje
+2022-08-13 15:32:24.447170: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.448169: could not convert string to float: '32u09wekjbfje'
+2022-08-13 15:32:24.449170: Unknown string format: 3434r409kmPAID123456
+2022-08-13 15:32:24.450169: not enough values to unpack (expected 3, got 1)
+2022-08-13 15:32:24.451203: could not convert string to float: '3434r409kmPAID123456'
+2022-08-14 00:29:53.210298: Unknown string format: 123fd35
+2022-08-14 00:29:53.213130: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.214519: could not convert string to float: '123fd35'
+2022-08-14 00:29:53.217327: Unknown string format: dfgc
+2022-08-14 00:29:53.218733: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.220140: could not convert string to float: 'dfgc'
+2022-08-14 00:29:53.222954: Unknown string format: 12olki
+2022-08-14 00:29:53.224361: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.227184: could not convert string to float: '12olki'
+2022-08-14 00:29:53.229992: Given date string not likely a datetime.
+2022-08-14 00:29:53.231396: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.232804: could not convert string to float: 'a'
+2022-08-14 00:29:53.660286: Unknown string format: 123fd35
+2022-08-14 00:29:53.661588: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.662890: could not convert string to float: '123fd35'
+2022-08-14 00:29:53.665494: Unknown string format: 32u09wekjbfje
+2022-08-14 00:29:53.666803: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.668110: could not convert string to float: '32u09wekjbfje'
+2022-08-14 00:29:53.673316: day is out of range for month
+2022-08-14 00:29:53.677601: with_traceback() takes exactly one argument (0 given)
+2022-08-14 00:29:53.679593: could not convert string to float: '01/31/2022'
+2022-08-14 00:29:53.826466: Unknown string format: 32u09wekjbfje
+2022-08-14 00:29:53.827768: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.829068: could not convert string to float: '32u09wekjbfje'
+2022-08-14 00:29:53.875818: Unknown string format: 3434r409km123456
+2022-08-14 00:29:53.877120: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:53.878421: could not convert string to float: '3434r409km123456'
+2022-08-14 00:29:54.123910: Unknown string format: 32u09wekjbfje
+2022-08-14 00:29:54.125213: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:54.126517: could not convert string to float: '32u09wekjbfje'
+2022-08-14 00:29:54.129120: Unknown string format: 3434r409kmPAID123456
+2022-08-14 00:29:54.130422: not enough values to unpack (expected 3, got 1)
+2022-08-14 00:29:54.131723: could not convert string to float: '3434r409kmPAID123456'
+2022-08-14 00:29:54.498505: not writable
