@@ -27,10 +27,13 @@ Three approaches were considered
     
     A notebook implementation is included
     
-    [Notebook]([GitHub Pages](https://pages.github.com/](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb)
+ 
     
+   [Notebook implementation](https://pages.github.com/](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb)
+
 
 ### IMPLEMENTATION WITH PYTHON AND SQL
+
 
    This involves ingesting the data from the source to an SQL Database. This provides a memory store and processing power is shared
    by the driver node(system running the python script) and the database engine. It also provides a persistent store where other BI tools
