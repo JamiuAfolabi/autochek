@@ -27,7 +27,7 @@ Three approaches were considered
     
     A notebook implementation is included
     
-    [a link] (https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb)
+    https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb
     
 
 ### IMPLEMENTATION WITH PYTHON AND SQL
