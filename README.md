@@ -38,8 +38,6 @@ payments (missed_payment)
 --Airflow was preferred to crontab for orchestration because it offers the ability to schedule, monitor, and most importantly, scale, increasingly complex workflows.
 - **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/engine/install/)).
 
-
-
 ### DATA_TRANSFORMATION
 
 This project was aimed at generating a transformed data for the business.
