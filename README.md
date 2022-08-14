@@ -12,8 +12,26 @@ scheduled to repay (payment_schedule), how frequent they are paying back
 (loan_payment), lastly a table that shows, history of times customers have missed their
 payments (missed_payment)
 
+## This repository contains:
 
-### DATA TRANSFORMATION
+- User-defined functions (UDFs)
+- Airflow DAGs for scheduled python-etl scripts
+
+1.[Pre-requisites](#Pre-requisites)
+2.[DATA_TRANSFORMATION](#DATA_TRANSFORMATION) 
+
+
+## Pre-requisites
+
+- **Python 3.8+** - see [this guide](https://docs.python-guide.org/starting/install3/win/) for instructions if you're on a windows. 
+- **Requirement.txt** - see [this guide](https://note.nkmk.me/en/python-pip-install-requirements/) on running a requirement.txt file.
+- **Airflow** - (required for orchestration. [Airflow Installation Guide](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)).
+--Airflow was preferred to crontab for orchestration because it offers the ability to schedule, monitor, and most importantly, scale, increasingly complex workflows.
+- **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/desktop/install/)).
+
+
+
+### DATA_TRANSFORMATION
 
 This project was aimed at generating a transformed data for the business.
 
