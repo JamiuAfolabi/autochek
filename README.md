@@ -46,7 +46,7 @@ Three approaches were considered
    This is important for debugging purpose
    
    #### STEPS
-   - Startup the postgres docker container. 
+   - Startup the [Postgres](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/docker-compose.yml) docker container. 
     
           docker-compose up
    
