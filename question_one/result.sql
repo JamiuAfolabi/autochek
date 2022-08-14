@@ -32,7 +32,7 @@ with repayment AS
 				p."Expected_payment_amount"
 			ELSE
 				0
-			end) over(partition by b."Borrower_Id",l.loan_id order by p."Expected_payment_date" )	as amount_at_risk,
+			end) over(partition by b."Borrower_Id",l.loan_id,extract(month from r.date_paid),extract(year from r.date_paid) order by p."Expected_payment_date" )	as amount_at_risk_date_paid,
 		b.borrower_credit_score, 
 		null as branch, 
 		null as branch_id,  
@@ -54,4 +54,4 @@ with repayment AS
 	inner join 
 		public.borrower b  
 	on 
-		b."Borrower_Id" = l."Borrower_id";
+		b."Borrower_Id" = l."Borrower_id"
