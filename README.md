@@ -49,7 +49,8 @@ Three approaches were considered
    - Startup the [Postgres](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/docker-compose.yml) docker container. 
     
           docker-compose up
-   
+   - Include necessary parameters in the CONFIG file   
+
 - IMPLEMENTATION WITH PYTHON
 - Pyspark
 
