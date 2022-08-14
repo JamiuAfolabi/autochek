@@ -78,12 +78,8 @@ class DBConnection:
                     handle_exception(err)
             else:
                 dframes = pd.read_sql(f.read(),engine,chunksize=self.chunksize)
-
-                header = True
                 for dframe in dframes:
-                    dframe.to_csv(('output.csv'),
-                        header=header, mode='r')
-                    header = False
+                    dframe.to_csv('output.csv')
         conn.close()
         engine.dispose()
 
