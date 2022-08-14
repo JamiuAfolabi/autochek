@@ -281,7 +281,6 @@ def load_to_local(data):
     historical_data.to_csv('historical_data.csv',index = False)
 
 ```
-
 Also we call the `upsert_database` function in the `load.py` module to save to a postgreSQL DB.
 
 ```
@@ -324,12 +323,24 @@ def upsert_database(data,target_engine,schema_name):
                                currency_to_USD = excluded.currency_to_USD
         """
     )
-    
 ```
 
 here is a sample database output
 
 ![alt text](question_two/images/db_output.png "db_output") 
+
+
+### Orchestration
+
+The scheduling interval for the script is 1am and 11 am : `schedule_interval': '0 11,1 * * *` .
+The output of the Airflow Trigger for scheduling for the scipt to test that the DAG is working looks like this
+
+![alt text](question_two/images/db_output.png "db_output") 
+
+
+
+
+
 
 
 #### STEPS
