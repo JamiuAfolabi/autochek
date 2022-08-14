@@ -8,10 +8,13 @@ This project was aimed at generating a transformed data for the business.
 The data was studied and analyzed to get an overview of the project. Findings include:
 
   -Some dates were out of range, hence a function was designed to parse the dates.
-  - The tables form a star schema has included in the ERD diagram
+  
+  - The tables form a star schema has shown in the ERD diagram
+  
   ![alt text](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/ERD.PNG)
 
-
+  - There is a relationship between the payment_schedule and repayment_data via the schedule_id and payment_id_pk.
+    The payment_id_pk was parsed by excluding Substring "PAID". The resulting output was a foreign key from the payment_schedule table
 
 Three approaches were considered
 
