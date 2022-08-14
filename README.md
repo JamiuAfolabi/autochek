@@ -9,7 +9,7 @@ The data was studied and analyzed to get an overview of the project. Findings in
 
   -Some dates were out of range, hence a function was designed to parse the dates.
   - The tables form a star schema has included in the ERD diagram
-  ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+  ![alt text](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/ERD.PNG)
 
 
 
