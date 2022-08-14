@@ -18,7 +18,14 @@ payments (missed_payment)
 - Airflow DAGs for scheduled python-etl scripts
 
 1.[Pre-requisites](#Pre-requisites)
+
 2.[DATA_TRANSFORMATION](#DATA_TRANSFORMATION) 
+
+3.[IMPLEMENTATION WITH PYTHON](#IMPLEMENTATION-WITH-PYTHON)
+
+4.[IMPLEMENTATION WITH PYTHON AND SQL](#IMPLEMENTATION-WITH-PYTHON-AND-SQL)
+
+5.[]
 
 
 ## Pre-requisites
@@ -49,7 +56,7 @@ The data was studied and analyzed to get an overview of the project. Findings in
 
 Three approaches were considered
 
-### IMPLEMENTATION WITH PYTHON
+### IMPLEMENTATION-WITH-PYTHON
 
     This approach involves executing all logic of the code in python. The bulk of the transformation was carried out in pandas.
     It comes with ease developing a production ready code at a fast pace.
@@ -65,7 +72,7 @@ Three approaches were considered
    The [Result](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/output2.csv) was generated as a CSV.
 
 
-### IMPLEMENTATION WITH PYTHON AND SQL
+### IMPLEMENTATION-WITH-PYTHON-AND-SQL
 
 
    This involves ingesting the data from the source to an SQL Database. This provides a memory store and processing power is shared
@@ -90,7 +97,7 @@ Three approaches were considered
         - Save the result in [Output.csv](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/output.csv)
  
 
-### IMPLEMENTATION WITH PYSPARK
+### IMPLEMENTATION-WITH-PYSPARK
   - This method is highly efficient when integrated with HDFS. This should be considered when the dataset is very large. It supports Multiprocessing,
     hence, increasing the speed of transformation
 
