@@ -53,7 +53,7 @@ Three approaches were considered
    - Execute the Main.py script. This script 
         - Create [DB Connection](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/dbconnection.py)
         - [Transform](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/parse.py) the data parsed
-        - Creates table using Relationship.sql
+        - Creates table using [Relationship.sql](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/relationship.sql)
         - Execute Result.sql script to generate the desired output
         - Save the result in Output.csv
  
