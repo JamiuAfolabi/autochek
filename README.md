@@ -41,7 +41,8 @@ Three approaches were considered
    by the driver node(system running the python script) and the database engine. It also provides a persistent store where other BI tools
    can easily integrate.
    
-   An ETL pipeline was built to ingest data from Google Sheet to Postgres on Dockers Container. All Exceptions are logged in logs.txt.
+   An ETL pipeline was built to ingest data from Google Sheet to Postgres on Dockers Container. All Exceptions are logged in 
+   [logs.txt](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/logs.txt).
    This is important for debugging purpose
    
 - IMPLEMENTATION WITH PYTHON
