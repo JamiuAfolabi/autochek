@@ -30,6 +30,8 @@ Three approaches were considered
  
     
    [Notebook implementation](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb)
+   
+   The [Result](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/output2.csv) was generated as a CSV.
 
 
 ### IMPLEMENTATION WITH PYTHON AND SQL
