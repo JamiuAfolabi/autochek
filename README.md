@@ -1,5 +1,18 @@
 # autochek
 
+## Problem Statement
+
+The overall goal starts by getting our dealers to list
+their cars, displaying these cars to the prospective customers on our marketplace and then
+providing affordable car loans to make life easy, you as our data engineer suddenly gets a
+data request around one of our most delicate dataset, Apparently, the business leaders
+would like to see a summarized table generated from data of the customer
+(borrower_table), the loans they currently have(loans table), the dates they have been
+scheduled to repay (payment_schedule), how frequent they are paying back
+(loan_payment), lastly a table that shows, history of times customers have missed their
+payments (missed_payment)
+
+
 ### DATA TRANSFORMATION
 
 This project was aimed at generating a transformed data for the business.
