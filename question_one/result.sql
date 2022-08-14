@@ -37,8 +37,8 @@ with repayment AS
 		null as branch, 
 		null as branch_id,  
 		null as borrower_name, 
- 		sum(r.amount_paid) over(partition by b."Borrower_Id",l.loan_id order by r.date_paid) total_amount_paid,  
- 		sum(p."Expected_payment_amount") over(partition by b."Borrower_Id",l.loan_id order by p."Expected_payment_date") total_amount_expected
+ 		sum(r.amount_paid) over(partition by b."Borrower_Id",l.loan_id order by r.date_paid rows between unbounded preceding and current row) total_amount_paid,  
+ 		sum(p."Expected_payment_amount") over(partition by b."Borrower_Id",l.loan_id order by p."Expected_payment_date" rows between unbounded preceding and current row)  total_amount_expected
 	from
 		repayment r 
 	inner join 
