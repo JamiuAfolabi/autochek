@@ -1,4 +1,4 @@
-# autochek
+# Autochek
 
 # Problem One 
 
