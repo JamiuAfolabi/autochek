@@ -1,7 +1,7 @@
 # autochek
 Pipeline to deliver task
 
-QUESTION ONE
+### QUESTION ONE
 
 This project was aimed at generating a transformed data for the business.
 
@@ -26,6 +26,8 @@ Three approaches were considered
     
     A notebook implementation is included
     
+    [a link] (https://github.com/user/repo/blob/branch/other_file.md)
+    
 
 ### IMPLEMENTATION WITH PYTHON AND SQL
 
@@ -33,7 +35,8 @@ Three approaches were considered
    by the driver node(system running the python script) and the database engine. It also provides a persistent store where other BI tools
    can easily integrate.
    
-   A pipeline was built to pull data from googlesheet to postgres database on a 
+   An ETL pipeline was built to ingest data from Google Sheet to Postgres on Dockers Container
+   
 - IMPLEMENTATION WITH PYTHON
 - Pyspark
 
