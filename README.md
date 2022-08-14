@@ -36,7 +36,7 @@ payments (missed_payment)
 - **Requirement.txt** - see [this guide](https://note.nkmk.me/en/python-pip-install-requirements/) on running a requirement.txt file.
 - **Airflow** - (required for orchestration. [Airflow Installation Guide](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)).
 --Airflow was preferred to crontab for orchestration because it offers the ability to schedule, monitor, and most importantly, scale, increasingly complex workflows.
-- **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/desktop/install/)).
+- **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/engine/install/)).
 
 
 
@@ -143,7 +143,7 @@ single date.
 - **Requirement.txt** - see [this guide](https://note.nkmk.me/en/python-pip-install-requirements/) on running a requirement.txt file.
 - **Airflow** - (required for orchestration. [Airflow Installation Guide](https://airflow.apache.org/docs/apache-airflow/stable/installation/index.html)).
 --Airflow was preferred to crontab for orchestration because it offers the ability to schedule, monitor, and most importantly, scale, increasingly complex workflows.
-- **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/desktop/install/)).
+- **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/engine/install/)).
 
 ## data-engineering-structure
 ![alt text](Screenshot%20(282).png "DE structure overview")
