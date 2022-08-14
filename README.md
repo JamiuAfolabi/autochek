@@ -47,7 +47,7 @@ Three approaches were considered
    This is important for debugging purpose
    
    #### STEPS
-   - Include necessary database parameters in the [CONFIG](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/config.ini) file  
+   - Include necessary database parameters in the [CONFIG](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/config.ini) file.       POSTGRES_ADDRESS is the IP of the server dockers is running.  
    - Startup the [Postgres](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/docker-compose.yml) docker container. 
     
           docker-compose up
