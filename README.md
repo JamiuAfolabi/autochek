@@ -45,6 +45,10 @@ Three approaches were considered
    [logs.txt](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/logs.txt).
    This is important for debugging purpose
    
+   #### STEPS
+    - Startup the postgres docker container. 
+        ``` docker-compose up ```
+   
 - IMPLEMENTATION WITH PYTHON
 - Pyspark
 
