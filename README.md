@@ -47,10 +47,11 @@ Three approaches were considered
    This is important for debugging purpose
    
    #### STEPS
+   - Include necessary database parameters in the [CONFIG](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/config.ini) file  
    - Startup the [Postgres](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/docker-compose.yml) docker container. 
     
           docker-compose up
-   - Include necessary database parameters in the [CONFIG](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/config.ini) file   
+    
    - Execute the [Main.py](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/main.py) script. This script 
         - Create [DB Connection](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/dbconnection.py)
         - [Transform](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/parse.py) the data parsed
