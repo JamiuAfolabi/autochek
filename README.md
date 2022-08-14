@@ -19,6 +19,7 @@ The data was studied and analyzed to get an overview of the project. Findings in
 Three approaches were considered
 
 ### IMPLEMENTATION WITH PYTHON
+
     This approach involves executing all logic of the code in python. The bulk of the transformation was carried out in pandas.
     It comes with ease developing a production ready code at a fast pace.
     
@@ -26,7 +27,7 @@ Three approaches were considered
     
     A notebook implementation is included
     
-    [a link] (https://github.com/user/repo/blob/branch/other_file.md)
+    [a link] (https://github.com/JamiuAfolabi/autochek/blob/main/question_one/python_solution_two.ipynb)
     
 
 ### IMPLEMENTATION WITH PYTHON AND SQL
