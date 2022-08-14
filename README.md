@@ -46,8 +46,9 @@ Three approaches were considered
    This is important for debugging purpose
    
    #### STEPS
-    - Startup the postgres docker container. 
-        ``` docker-compose up ```
+   - Startup the postgres docker container. 
+    
+          docker-compose up
    
 - IMPLEMENTATION WITH PYTHON
 - Pyspark
