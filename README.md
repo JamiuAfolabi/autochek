@@ -25,7 +25,7 @@ payments (missed_payment)
 
 4.[IMPLEMENTATION WITH PYTHON AND SQL](#IMPLEMENTATION-WITH-PYTHON-AND-SQL)
 
-5.[]
+5.[STEPS-TO-RUN-CODE](#STEPS)
 
 
 ## Pre-requisites
