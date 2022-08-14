@@ -8,6 +8,7 @@ This project was aimed at generating a transformed data for the business.
 The data was studied and analyzed to get an overview of the project. Findings include:
 
   - Some dates were out of range, hence a function was designed to parse the dates.
+  - The borrower_credit_score 
   
   - The tables form a star schema has shown in the ERD diagram
   
