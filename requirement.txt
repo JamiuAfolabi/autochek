@@ -1,0 +1,9 @@
+requests
+pandas 
+json
+configparser
+sqlalchemy
+ast
+webbrowser
+apache-airflow[celery]==2.3.3
+psycopg2
