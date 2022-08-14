@@ -58,7 +58,8 @@ Three approaches were considered
         - Save the result in [Output.csv](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/output.csv)
  
 
-- IMPLEMENTATION WITH PYTHON
-- Pyspark
+### IMPLEMENTATION WITH PYSPARK
+  - This method is highly efficient when integrated with HDFS. This should be considered when the dataset is very large. It supports Multiprocessing,
+    hence, increasing the speed of transformation
 
 
