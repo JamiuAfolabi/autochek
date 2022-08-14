@@ -19,7 +19,7 @@ payments (missed_payment)
 - User-defined functions (UDFs)
 - Airflow DAGs for scheduled python-etl scripts
 
-1.[Pre-requisites](#Pre-requisites)
+1.[Pre-requisites](#Pre_requisites)
 
 2.[DATA_TRANSFORMATION](#DATA_TRANSFORMATION) 
 
@@ -30,7 +30,7 @@ payments (missed_payment)
 5.[STEPS-TO-RUN-CODE](#STEPS)
 
 
-## Pre-requisites
+## Pre_requisites
 
 - **Python 3.8+** - see [this guide](https://docs.python-guide.org/starting/install3/win/) for instructions if you're on a windows. 
 - **Requirement.txt** - see [this guide](https://note.nkmk.me/en/python-pip-install-requirements/) on running a requirement.txt file.
