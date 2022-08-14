@@ -335,7 +335,7 @@ here is a sample database output
 The scheduling interval for the script is 1am and 11 am : `schedule_interval': '0 11,1 * * *` .
 The output of the Airflow Trigger for scheduling for the scipt to test that the DAG is working looks like this
 
-![alt text](question_two/images/db_output.png "db_output") 
+![alt text](question_two/images/airflow_dag.png "airflow_dag") 
 
 
 
