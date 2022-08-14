@@ -50,7 +50,7 @@ Three approaches were considered
     
           docker-compose up
    - Include necessary database parameters in the [CONFIG](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/config.ini) file   
-   - Execute the Main.py script. This script 
+   - Execute the [Main.py](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/main.py) script. This script 
         - Create [DB Connection](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/dbconnection.py)
         - [Transform](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/parse.py) the data parsed
         - Creates table using [Relationship.sql](https://github.com/JamiuAfolabi/autochek/blob/main/question_one/relationship.sql)
