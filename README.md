@@ -144,7 +144,7 @@ single date.
 - **Docker** - (needed for contenarization). [Docker Installation Guide](https://docs.docker.com/engine/install/)).
 
 ## data-engineering-structure
-![alt text](Screenshot%20(282).png "DE structure overview")
+![alt text](question_two/images/Screenshot%20(282).png "DE structure overview")
 
 The image above lays out the processing structure. We are going to go through an overview of why we try to adhere to this structure and will try to use the problem set above to explain how we are going to apply this structure to the problem set.
 
@@ -246,7 +246,7 @@ def get_exchange(currencies,account_id,api_key):
 
 The sample output looks like this .
 
-![alt text](Screenshot%20(283).png "DataFrame output")
+![alt text](question_two/images/Screenshot%20(283).png "DataFrame output")
 
 
 ## Load_Data
@@ -329,7 +329,7 @@ def upsert_database(data,target_engine,schema_name):
 
 here is a sample database output
 
-![alt text](db_output.png "db_output") 
+![alt text](question_two/images/db_output.png "db_output") 
 
 
 #### STEPS
