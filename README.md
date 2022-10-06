@@ -4,7 +4,7 @@
 
 ## Problem Statement
 
-The overall goal starts by getting our dealers to lists
+Thes overall goal starts by getting our dealers to list
 their cars, displaying these cars to the prospective customers on our marketplace and then
 providing affordable car loans to make life easy, you as our data engineer suddenly gets a
 data request around one of our most delicate dataset, Apparently, the business leaders
