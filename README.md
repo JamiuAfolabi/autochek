@@ -14,7 +14,7 @@ scheduled to repay (payment_schedule), how frequent they are paying back
 (loan_payment), lastly a table that shows, history of times customers have missed their
 payments (missed_payment)
 
-## This repository contains:
+## The repository contains:
 
 - User-defined functions (UDFs)
 - Airflow DAGs for scheduled python-etl scripts
