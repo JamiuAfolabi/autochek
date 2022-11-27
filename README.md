@@ -54,7 +54,7 @@ The data was studied and analyzed to get an overview of the project. Findings in
   - There is a relationship between the payment_schedule and repayment_data via the schedule_id and payment_id_pk.
     The payment_id_pk was parsed by excluding Substring "PAID". The resulting output was a foreign key from the payment_schedule table
 
-Three approaches were considered
+Three approaches were considered. Namely
 
 ### IMPLEMENTATION-WITH-PYTHON
 
